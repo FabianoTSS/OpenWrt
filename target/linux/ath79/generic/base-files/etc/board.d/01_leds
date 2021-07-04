@@ -349,6 +349,11 @@ tplink,tl-wr902ac-v1)
 	ucidef_set_led_netdev "lan" "LAN" "green:lan" "eth0"
 	ucidef_set_led_netdev "internet" "Internet" "green:internet" "eth0"
 	;;
+tplink,tl-wr941hp-v1)
+	ucidef_set_led_netdev "wan-data" "WAN-ON" "blue:wan" "eth1" "tx rx"
+	ucidef_set_led_netdev "wan" "WAN-OFF" "red:wan" "eth1" "link"
+	ucidef_set_led_switch "lan" "LAN" "blue:lan" "switch0" "0x1e"
+	;;
 tplink,re355-v1|\
 tplink,re450-v1|\
 tplink,re450-v2|\
